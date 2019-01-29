@@ -21,6 +21,7 @@ public class NumberWords {
             }
             else {
             	result = numbers[number % 10];
+            	number /= 10;
             	result = tens[number % 10] + " " + result;
             	number /= 10;
             }
