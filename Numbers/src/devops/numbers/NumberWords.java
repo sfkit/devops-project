@@ -15,7 +15,7 @@ public class NumberWords {
 		}
 		else {
 			
-            if (number % 100 < 20) {
+            if ( (number % 100 < 20) && (number < 100) ) {
 
     			result = numbers[number % 100];
     			number /= 100;
