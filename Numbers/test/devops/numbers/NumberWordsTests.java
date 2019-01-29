@@ -67,6 +67,11 @@ public class NumberWordsTests {
 		Assert.assertEquals( "Nine Hundred and Ninety Nine", numberWords.toWords( 999 ) ) ;
 	}
 	
+	@Test
+	public void numberReturnsTooBigOutOfRange() {
+		Assert.assertEquals( "Error", "Number out of range", numberWords.toWords( 9999 ) ) ;
+	}
+	
 	
 
 
