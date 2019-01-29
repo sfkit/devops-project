@@ -19,7 +19,7 @@ public class NumberWords {
 
     			result = numbers[number % 100];
     			number /= 100;
-    			return result.trim()
+    			return result.trim();
             }
             else {
             	result = numbers[number % 10];
