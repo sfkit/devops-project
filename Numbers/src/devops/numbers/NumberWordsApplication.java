@@ -22,7 +22,7 @@ public final class NumberWordsApplication {
 				
 				if ( number == 0 ) {
 					
-					System.exit();
+					System.exit(0);
 				}
 				else {
 
