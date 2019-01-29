@@ -52,6 +52,21 @@ public class NumberWordsTests {
 		Assert.assertEquals( "One Hundred", numberWords.toWords( 100 ) ) ;
 	}
 	
+	@Test
+	public void numberReturnsTwoHundredAndFifty() {
+		Assert.assertEquals( "Two Hundred and Fifty", numberWords.toWords( 250 ) ) ;
+	}
+	
+	@Test
+	public void numberReturnsFiveHundredAndFortyFive() {
+		Assert.assertEquals( "Five Hundred and Forty Five", numberWords.toWords( 545 ) ) ;
+	}
+	
+	@Test
+	public void numberReturnsNineHundredAndNinetyNine() {
+		Assert.assertEquals( "Nine Hundred and Ninety Nine", numberWords.toWords( 999 ) ) ;
+	}
+	
 	
 
 

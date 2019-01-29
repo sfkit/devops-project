@@ -11,6 +11,7 @@ public class NumberWords {
 		
 		if ( number < 0 ) {
 			result = "Number out of range";
+			return result.trim();
 		}
 		else {
 			
@@ -18,17 +19,22 @@ public class NumberWords {
 
     			result = numbers[number % 100];
     			number /= 100;
+    			return result.trim()
             }
             else {
             	result = numbers[number % 10];
             	number /= 10;
             	result = tens[number % 10] + " " + result;
             	number /= 10;
-            }
+            	
+            	if (number == 0) return result.trim();
+            	if ( result.length == 1 ) return ( numbers[number] + "Hundred" ).trim();
+            	
+            	return ( numbers[number] + "Hundred and " + result ).trim();
+            } 
 			
 		}
-		
-		return result.trim() ;
+			
 	}
 
 }
