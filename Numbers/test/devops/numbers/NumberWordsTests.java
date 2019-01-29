@@ -36,6 +36,13 @@ public class NumberWordsTests {
 	public void numberReturnsNineteen() {
 		Assert.assertEquals( "Nineteen", numberWords.toWords( 19 ) ) ;
 	}
+	
+	@Test
+	public void numberReturnsTwenty() {
+		Assert.assertEquals( "Twenty", numberWords.toWords( 20 ) ) ;
+	}
+	
+	
 
 
 
