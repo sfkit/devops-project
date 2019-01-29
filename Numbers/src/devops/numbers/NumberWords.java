@@ -28,7 +28,7 @@ public class NumberWords {
             	number /= 10;
             	
             	if (number == 0) return result.trim();
-            	if ( result.length == 1 ) return ( numbers[number] + "Hundred" ).trim();
+            	if ( result.length() == 1 ) return ( numbers[number] + "Hundred" ).trim();
             	
             	return ( numbers[number] + "Hundred and " + result ).trim();
             } 
